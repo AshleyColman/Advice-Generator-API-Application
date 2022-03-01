@@ -1,0 +1,127 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+/* #region CSS Reset */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* #endregion */
+
+/* #region Custom Styles */
+:root {
+    --gray-blue: hsl(217, 19%, 38%);
+    --dark-gray-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --font-size-quote: 28px;
+    --font-family: 'Manrope', sans-serif;
+    --font-weight-800: 800;
+}
+
+html {
+    font-family: var(--font-family);
+}
+
+html, body, main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.background {
+    background-color: var(--dark-blue);
+    width: 100%;
+    height: 100%;
+}
+
+.grid-center {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    background-color: var(--dark-gray-blue);
+    width: 80%;
+    padding: 2rem;
+    border-radius: 25px;
+}
+
+.title {
+    color: var(--neon-green);
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 4rem;
+    letter-spacing: 0.25rem;
+}
+
+.quote {
+    color: var(--light-cyan);
+    font-weight: var(--font-weight-800);
+    font-size: var(--font-size-quote);
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.divider-image {
+    margin: auto;
+    display: block;
+    margin-bottom: 4rem;
+}
+
+.button {
+    background-color: var(--neon-green);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    height: 5rem;
+    width: 5rem;
+    margin: auto;
+    display: block;
+    margin-bottom: -4.5rem;
+}
+
+.button:hover {
+    background-color: var(--gray-blue);
+    cursor: pointer;
+}
+/* #endregion */

@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Advice Generator API Application";
+    ViewData["Author"] = "Ashley Colman";
+}
+
+<div class="background">
+    <div class="grid-center">
+        <div class="card">
+            <h1 class="title">@($"ADVICE #{Model.AdviceModel.slip.id}")</h1>
+            <p class="quote">@Model.AdviceModel.slip.advice</p>
+            <img src="~/images/pattern-divider-mobile.svg" alt="dice" class="divider-image" />
+            <form method="post">
+                <button type="submit" class="button">
+                    <img src="~/images/icon-dice.svg" alt="dice image" title="Load new advice quote"/>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
